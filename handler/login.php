@@ -18,7 +18,7 @@
         
 
         if($res != null){
-            // setcookie('user_id', '', time() - 3600, '/');
+            $_SESSION["username"] = $username;
             setcookie('user_id', $res['id'], time() + 3600);
         }
         

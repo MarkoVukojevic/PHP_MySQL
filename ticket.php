@@ -59,10 +59,10 @@
     <a class="navbar-brand" href="/tickets/index.html">Concert Tickets</a>
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/tickets/myTickets.html">My Tickets</a>
+        <a class="nav-link" href="/tickets/myTickets.php">My Tickets</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/tickets/ticket.html">Back to booking</a>
+        <a class="nav-link" href="/tickets/ticket.php">Back to booking</a>
 
       </li>
     </ul>
@@ -72,7 +72,7 @@
     <div class="row">
       <div class="col-md-6 offset-md-3">
         <div class="form-container">
-          <h2 class="text-center">Ticket Booking</h2>
+          <h2 class="text-center">Ticket Booking(<?php  session_start(); echo $_SESSION["username"]?>)</h2>
           <form>
             <div class="form-group">
               <label for="ticket-quantity">Number of Tickets</label>

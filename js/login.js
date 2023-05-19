@@ -13,7 +13,7 @@ function login() {
                 alert("Wrong username or password");
             }
             else {
-                location.href="ticket.html";
+                location.href="ticket.php";
             }
         },
         error: function(xhr){

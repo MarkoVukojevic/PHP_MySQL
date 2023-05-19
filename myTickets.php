@@ -54,10 +54,10 @@
         <a class="navbar-brand" href="/tickets/index.html">Concert Tickets</a>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/tickets/myTickets.html">My Tickets</a>
+            <a class="nav-link" href="/tickets/myTickets.php">My Tickets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/tickets/ticket.html">Back to booking</a>
+            <a class="nav-link" href="/tickets/ticket.php">Back to booking</a>
     
           </li>
         </ul>
@@ -67,7 +67,7 @@
     <div class="row">
       <div class="col-md-8 offset-md-2">
         <div class="ticket-list-container">
-          <h2 class="text-center">My Tickets</h2>
+          <h2 class="text-center">My Tickets(<?php  session_start(); echo $_SESSION["username"]?>)</h2>
         </div>
       </div>
     </div>
