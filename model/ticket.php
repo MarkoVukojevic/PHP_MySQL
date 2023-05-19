@@ -11,11 +11,12 @@
         }
 
         public static function getTickets(mysqli $conn, $id) {
-            $q = "SELECT  c.categoryName, c.price, u.username
-                  FROM ticket.category AS c
-                  INNER JOIN ticket.user AS u ON t.userId = u.id
-                  INNER JOIN ticket.ticket AS t ON t.categoryId = c.id
-                  WHERE u.id = $id";
+            $q = "SELECT t.id, c.categoryName, c.price, u.username
+      FROM ticket.category AS c
+      INNER JOIN ticket.ticket AS t ON t.categoryId = c.id
+      INNER JOIN ticket.user AS u ON t.userId = u.id
+      WHERE u.id = $id";
+
             return $conn->query($q);
         }
 
