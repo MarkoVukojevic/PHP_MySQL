@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tickets</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f1f8ff;
+      color: #000;
+    }
+
+    .navbar {
+      background-color: #e3f2fd;
+    }
+
+    .ticket-list-container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f0f8ff;
+      border-radius: 5px;
+      margin-top: 50px;
+    }
+
+    .ticket {
+      background-color: #e8f5fe;
+      color: #000;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .ticket h3 {
+      margin-top: 0;
+    }
+
+    .back-link {
+      color: #000;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <a class="navbar-brand" href="/tickets/index.html">Concert Tickets</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/tickets/myTickets.html">My Tickets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tickets/ticket.html">Back to booking</a>
+    
+          </li>
+        </ul>
+      </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="ticket-list-container">
+          <h2 class="text-center">My Tickets</h2>
+          <div class="ticket">
+            <h3>Concert Ticket</h3>
+            <p>Category: General Admission</p>
+            <p>Date: 2023-06-15</p>
+            <p>Time: 8:00 PM</p>
+          </div>
+          <div class="ticket">
+            <h3>Concert Ticket</h3>
+            <p>Category: VIP</p>
+            <p>Date: 2023-06-20</p>
+            <p>Time: 7:30 PM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
